@@ -1,35 +1,65 @@
+
+
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=22&pause=1000&color=00FF41&center=true&vCenter=true&width=1000&height=100&lines=Hi+👋+I'm+SK+RAJ;Passionate+Web+Developer+from+India;Email:+skrajraj117@gmail.com;Working+on+Web+Development+projects;Learning+Advanced+Frontend+and+Backend;Looking+to+collaborate+on+Open+source;Ask+me+about+HTML+CSS+and+JavaScript;Fun+fact:+I+Love+Tech+and+Tech+Loves+Me" alt="Typing Animation" />
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#0d1117" rx="15" stroke="#30363d" stroke-width="2" />
+  
+  <rect width="100%" height="35" fill="#161b22" rx="10" />
+  <circle cx="20" cy="18" r="5" fill="#ff5f56" />
+  <circle cx="40" cy="18" r="5" fill="#ffbd2e" />
+  <circle cx="60" cy="18" r="5" fill="#27c93f" />
+  <text x="350" y="22" fill="#8b949e" font-family="monospace" font-size="14">sk-raj-terminal.sh</text>
 
-<br/>
+  <g font-family="monospace" font-size="18" fill="#4AF626">
+    <text x="30" y="80">
+      <tspan>> Hi 👋, I'm SK RAJ</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0s" fill="freeze" />
+    </text>
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZ3N6bmZ0bm50bmZ0bmZ0bmZ0bmZ0bmZ0bmZ0bmZ0JmVwPXYxX2ludGVybmFsX2dpZl9ieV9iZCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif" width="500" />
+    <text x="30" y="115">
+      <tspan>> A passionate Web Developer from India</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1s" fill="freeze" />
+    </text>
+
+    <text x="30" y="150">
+      <tspan>> Email: skrajraj117@gmail.com</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2s" fill="freeze" />
+    </text>
+
+    <text x="30" y="185">
+      <tspan>> 🔭 Working on: Web Development projects</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3s" fill="freeze" />
+    </text>
+
+    <text x="30" y="220">
+      <tspan>> 🌱 Learning: Advanced Frontend &amp; Backend</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4s" fill="freeze" />
+    </text>
+
+    <text x="30" y="255">
+      <tspan>> 👯 Collab: Open source projects</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="5s" fill="freeze" />
+    </text>
+
+    <text x="30" y="290">
+      <tspan>> 💬 Ask me: JS, HTML, CSS</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="6s" fill="freeze" />
+    </text>
+
+    <text x="30" y="325" fill="#58a6ff">
+      <tspan>> ⚡ Fun fact: I Love Tech and Tech Loves Me</tspan>
+      <animate attributeName="opacity" values="0;1;0;1" dur="2s" repeatCount="indefinite" begin="7s" />
+    </text>
+
+    <rect x="30" y="340" width="12" height="20" fill="#4AF626">
+      <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg>
 
 </div>
 
----
-
-### 📂 My Profile Details
-- 🔭 **Currently working on:** Web Development projects
-- 🌱 **Currently learning:** Advanced Frontend & Backend
-- 👯 **Looking to collaborate on:** Open source projects
-- 🤔 **Looking for help with:** Mastering full-stack integration
-- 💬 **Ask me about:** HTML, CSS, & JavaScript
-- 😄 **Pronouns:** He/Him
-- ⚡ **Fun fact:** I Love Tech and Tech Loves Me
-
----
-
-### 🛠 My Tech Stack
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,mongodb,tailwind,git,vscode&theme=dark" />
-</p>
-
-### 📊 System Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=skrajraj117&show_icons=true&theme=matrix&hide_border=true" />
-</p>
 ***************************************************************************************************************************************
 ## 🌐 Socials:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/https://www.facebook.com/shekh.raj.285187?mibextid=rS40aB7S9Ucbxw6v) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/shekhrajktr?igsh=M2hvMzVtNzc5Njhx)  [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:skrajraj117@gmail.com) 
