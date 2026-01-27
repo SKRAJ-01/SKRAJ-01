@@ -1,20 +1,42 @@
-Hi 👋, I'm SK RAJ
-A passionate Web Developer from India
-Email Me 👉 skrajraj117@gmail.com For Collaboration/Project or Anything Else
-🔭 I’m currently working on: Web Development projects
-🌱 I’m currently learning: Advanced Frontend & Backend technologies
-👯 I’m looking to collaborate on: Open source and web-based projects
-🤔 I’m looking for help with: Mastering full-stack integration
-💬 Ask me about: Web Development, HTML, CSS, & JavaScript
-😄 Pronouns: He/Him
-⚡ Fun fact: I Love Tech and Tech Loves Me
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=22&pause=1000&color=00FF41&center=true&vCenter=true&width=1000&height=100&lines=Hi+👋+I'm+SK+RAJ;Passionate+Web+Developer+from+India;Email:+skrajraj117@gmail.com;Working+on+Web+Development+projects;Learning+Advanced+Frontend+and+Backend;Looking+to+collaborate+on+Open+source;Ask+me+about+HTML+CSS+and+JavaScript;Fun+fact:+I+Love+Tech+and+Tech+Loves+Me" alt="Typing Animation" />
+
+<br/>
+
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZ3N6bmZ0bm50bmZ0bmZ0bmZ0bmZ0bmZ0bmZ0bmZ0JmVwPXYxX2ludGVybmFsX2dpZl9ieV9iZCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif" width="500" />
+
+</div>
+
+---
+
+### 📂 My Profile Details
+- 🔭 **Currently working on:** Web Development projects
+- 🌱 **Currently learning:** Advanced Frontend & Backend
+- 👯 **Looking to collaborate on:** Open source projects
+- 🤔 **Looking for help with:** Mastering full-stack integration
+- 💬 **Ask me about:** HTML, CSS, & JavaScript
+- 😄 **Pronouns:** He/Him
+- ⚡ **Fun fact:** I Love Tech and Tech Loves Me
+
+---
+
+### 🛠 My Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,mongodb,tailwind,git,vscode&theme=dark" />
+</p>
+
+### 📊 System Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=skrajraj117&show_icons=true&theme=matrix&hide_border=true" />
+</p>
 ***************************************************************************************************************************************
 ## 🌐 Socials:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/https://www.facebook.com/shekh.raj.285187?mibextid=rS40aB7S9Ucbxw6v) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/shekhrajktr?igsh=M2hvMzVtNzc5Njhx)  [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:skrajraj117@gmail.com) 
 
 
 <div align="center">
-  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="snake animation" />
 </div>
 
 # 💻 Tech Stack:
