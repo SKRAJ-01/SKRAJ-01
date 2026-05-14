@@ -1,0 +1,98 @@
+<?php
+// Database Connection
+$conn = new mysqli("localhost", "root", "", "expense_db");
+if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
+
+// Handle Form Submission
+if (isset($_POST['submit'])) {
+    $amount = $_POST['amount'];
+    $remark = $_POST['remark'];
+    $type = $_POST['type'];
+
+    $sql = "INSERT INTO transactions (amount, remark, type) VALUES ('$amount', '$remark', '$type')";
+    $conn->query($sql);
+    header("Location: index.php"); // Refresh to prevent resubmission
+}
+
+// Fetch Calculations
+$totals = $conn->query("SELECT 
+    SUM(CASE WHEN type = 'Expense' THEN amount ELSE 0 END) as total_expense,
+    SUM(CASE WHEN type = 'Income' THEN amount ELSE 0 END) as total_income 
+    FROM transactions")->fetch_assoc();
+
+$total_expense = $totals['total_expense'] ?? 0;
+$total_income = $totals['total_income'] ?? 0;
+$total_balance = $total_income - $total_expense;
+
+// Fetch Transactions for List
+$list = $conn->query("SELECT * FROM transactions ORDER BY created_at DESC");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .main-card { border: 2px solid #007bff; border-radius: 10px; margin-top: 30px; padding: 20px; background: #fff; }
+        .header-title { border-bottom: 2px solid #007bff; padding-bottom: 10px; margin-bottom: 20px; text-align: center; color: #007bff; }
+        .stat-box { border: 1px solid #007bff; padding: 20px; margin-bottom: 15px; border-radius: 5px; text-align: center; }
+        .transaction-list { border: 1px solid #ccc; height: 350px; overflow-y: auto; padding: 10px; border-radius: 5px; }
+        .item { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; }
+        .item-meta { font-size: 0.8rem; color: #666; text-align: right; }
+        .indicator { width: 12px; height: 12px; border-radius: 50%; display: inline-block; border: 1px solid #000; margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="main-card">
+        <p class="text-muted small m-0">endpoint: ExpTrack/feeder.php</p>
+        <h2 class="header-title">Simple Expense Tracker using API</h2>
+
+        <!-- Input Form -->
+        <form method="POST" class="row g-2 mb-4">
+            <div class="col-md-3"><input type="number" name="amount" class="form-control" placeholder="Amount" required></div>
+            <div class="col-md-3"><input type="text" name="remark" class="form-control" placeholder="Remark" required></div>
+            <div class="col-md-3">
+                <select name="type" class="form-select">
+                    <option value="Expense">Expense</option>
+                    <option value="Income">Income</option>
+                </select>
+            </div>
+            <div class="col-md-3"><button type="submit" name="submit" class="btn btn-outline-primary w-100">Submit</button></div>
+        </form>
+
+        <div class="row">
+            <!-- Left Side: Totals -->
+            <div class="col-md-5">
+                <div class="stat-box"><h5>Total Expenses</h5><h3>₹ <?php echo number_format($total_expense, 2); ?></h3></div>
+                <div class="stat-box"><h5>Total Incomes</h5><h3>₹ <?php echo number_format($total_income, 2); ?></h3></div>
+                <div class="stat-box"><h5>Total Balance</h5><h3>₹ <?php echo number_format($total_balance, 2); ?></h3></div>
+            </div>
+
+            <!-- Right Side: Transaction List -->
+            <div class="col-md-7">
+                <div class="transaction-list">
+                    <?php while($row = $list->fetch_assoc()): ?>
+                    <div class="item">
+                        <div>
+                            <span class="indicator" style="background: <?php echo ($row['type'] == 'Income' ? '#28a745' : '#dc3545'); ?>;"></span>
+                            <strong style="font-size: 1.2rem;"><?php echo $row['amount']; ?></strong>
+                        </div>
+                        <div class="item-meta">
+                            <div><?php echo $row['remark']; ?></div>
+                            <div><?php echo date('d-m-Y H:i', strtotime($row['created_at'])); ?></div>
+                        </div>
+                    </div>
+                    <?php endwhile; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
